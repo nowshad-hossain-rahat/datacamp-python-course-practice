@@ -1,0 +1,155 @@
+[
+    {
+        "label": "matplotlib.pyplot",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "matplotlib.pyplot",
+        "description": "matplotlib.pyplot",
+        "detail": "matplotlib.pyplot",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "list1",
+        "kind": 5,
+        "importPath": "day1",
+        "description": "day1",
+        "peekOfCode": "list1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nprint(list1)",
+        "detail": "day1",
+        "documentation": {}
+    },
+    {
+        "label": "years",
+        "kind": 5,
+        "importPath": "day2",
+        "description": "day2",
+        "peekOfCode": "years = [2000, 2005, 2010, 2015, 2020]\npopulations = [10, 15, 14, 13, 18]\nplt.plot(years, populations)\nplt.show()",
+        "detail": "day2",
+        "documentation": {}
+    },
+    {
+        "label": "populations",
+        "kind": 5,
+        "importPath": "day2",
+        "description": "day2",
+        "peekOfCode": "populations = [10, 15, 14, 13, 18]\nplt.plot(years, populations)\nplt.show()",
+        "detail": "day2",
+        "documentation": {}
+    },
+    {
+        "label": "num",
+        "kind": 5,
+        "importPath": "day3",
+        "description": "day3",
+        "peekOfCode": "num = 8\nwhile num > 0:\n  print(num)\n  num = num - 1\nelse:\n  print(\"Done!\")\nroles = [\"admin\", \"user\"]\nfor role in roles:\n  if role == \"admin\":\n    print(\"Hello admin, would you like to see a status report?\")",
+        "detail": "day3",
+        "documentation": {}
+    },
+    {
+        "label": "roles",
+        "kind": 5,
+        "importPath": "day3",
+        "description": "day3",
+        "peekOfCode": "roles = [\"admin\", \"user\"]\nfor role in roles:\n  if role == \"admin\":\n    print(\"Hello admin, would you like to see a status report?\")\n  else:\n    print(\"Hello \" + role + \", thank you for logging in again.\")\nfor index, role in enumerate(roles):\n  if role == \"admin\":\n    print(f\"{index} - Hello admin, would you like to see a status report?\")\n  else:",
+        "detail": "day3",
+        "documentation": {}
+    },
+    {
+        "label": "users",
+        "kind": 5,
+        "importPath": "day3",
+        "description": "day3",
+        "peekOfCode": "users = {\n  \"nowshad\": \"nowshad@gmail.com\",\n  \"rahat\": \"rahat@gmail.com\",\n  \"rohan\": \"rohan@gmail.com\"\n}\nfor key in users:\n  print(f\"Key: {key}, Value: {users[key]}\")\nprint(\"\\n\")\nfor key, val in users.items():\n  print(f\"Key: {key}, Value: {val}\")",
+        "detail": "day3",
+        "documentation": {}
+    },
+    {
+        "label": "np_arr",
+        "kind": 5,
+        "importPath": "day3",
+        "description": "day3",
+        "peekOfCode": "np_arr = np.array([[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [11, 12, 13, 14, 15, 16, 17, 18, 19, 20]])\nfor num in np.nditer(np_arr):\n  print(num)",
+        "detail": "day3",
+        "documentation": {}
+    },
+    {
+        "label": "netflix_df",
+        "kind": 5,
+        "importPath": "day4",
+        "description": "day4",
+        "peekOfCode": "netflix_df = pd.read_csv(\"netflix_data.csv\")\nduration = netflix_df[\"duration\"].value_counts().idxmax()\nprint(duration)\naction_movies = netflix_df[\n    np.logical_and(netflix_df[\"type\"] == \"Movie\", netflix_df[\"genre\"] == \"Action\")\n]\nshort_movies = action_movies[action_movies[\"duration\"] < 90]\nmovies_after_1990s = short_movies[short_movies[\"release_year\"] >= 1990]\nmovies_before_2000s = movies_after_1990s[movies_after_1990s[\"release_year\"] < 2000]\nshort_movie_count = len(movies_before_2000s)",
+        "detail": "day4",
+        "documentation": {}
+    },
+    {
+        "label": "duration",
+        "kind": 5,
+        "importPath": "day4",
+        "description": "day4",
+        "peekOfCode": "duration = netflix_df[\"duration\"].value_counts().idxmax()\nprint(duration)\naction_movies = netflix_df[\n    np.logical_and(netflix_df[\"type\"] == \"Movie\", netflix_df[\"genre\"] == \"Action\")\n]\nshort_movies = action_movies[action_movies[\"duration\"] < 90]\nmovies_after_1990s = short_movies[short_movies[\"release_year\"] >= 1990]\nmovies_before_2000s = movies_after_1990s[movies_after_1990s[\"release_year\"] < 2000]\nshort_movie_count = len(movies_before_2000s)\nprint(short_movie_count)",
+        "detail": "day4",
+        "documentation": {}
+    },
+    {
+        "label": "action_movies",
+        "kind": 5,
+        "importPath": "day4",
+        "description": "day4",
+        "peekOfCode": "action_movies = netflix_df[\n    np.logical_and(netflix_df[\"type\"] == \"Movie\", netflix_df[\"genre\"] == \"Action\")\n]\nshort_movies = action_movies[action_movies[\"duration\"] < 90]\nmovies_after_1990s = short_movies[short_movies[\"release_year\"] >= 1990]\nmovies_before_2000s = movies_after_1990s[movies_after_1990s[\"release_year\"] < 2000]\nshort_movie_count = len(movies_before_2000s)\nprint(short_movie_count)",
+        "detail": "day4",
+        "documentation": {}
+    },
+    {
+        "label": "short_movies",
+        "kind": 5,
+        "importPath": "day4",
+        "description": "day4",
+        "peekOfCode": "short_movies = action_movies[action_movies[\"duration\"] < 90]\nmovies_after_1990s = short_movies[short_movies[\"release_year\"] >= 1990]\nmovies_before_2000s = movies_after_1990s[movies_after_1990s[\"release_year\"] < 2000]\nshort_movie_count = len(movies_before_2000s)\nprint(short_movie_count)",
+        "detail": "day4",
+        "documentation": {}
+    },
+    {
+        "label": "movies_after_1990s",
+        "kind": 5,
+        "importPath": "day4",
+        "description": "day4",
+        "peekOfCode": "movies_after_1990s = short_movies[short_movies[\"release_year\"] >= 1990]\nmovies_before_2000s = movies_after_1990s[movies_after_1990s[\"release_year\"] < 2000]\nshort_movie_count = len(movies_before_2000s)\nprint(short_movie_count)",
+        "detail": "day4",
+        "documentation": {}
+    },
+    {
+        "label": "movies_before_2000s",
+        "kind": 5,
+        "importPath": "day4",
+        "description": "day4",
+        "peekOfCode": "movies_before_2000s = movies_after_1990s[movies_after_1990s[\"release_year\"] < 2000]\nshort_movie_count = len(movies_before_2000s)\nprint(short_movie_count)",
+        "detail": "day4",
+        "documentation": {}
+    },
+    {
+        "label": "short_movie_count",
+        "kind": 5,
+        "importPath": "day4",
+        "description": "day4",
+        "peekOfCode": "short_movie_count = len(movies_before_2000s)\nprint(short_movie_count)",
+        "detail": "day4",
+        "documentation": {}
+    }
+]
